@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+/* customization */
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magneta: hsl(300, 69%, 71%);
+    --bs:0.5em 0.25em 0.75em rgba(0,0,0,0.2), 0.125em 0.125em 0.125em rgba(0, 0, 0, 0.15);
+}
+
+/* Typography */
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 35px;
+    background: url('/images/bg-mobile.svg') no-repeat fixed ;
+    background-color: var(--violet);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    color: #fff;
+    padding: 30px 0 20px 0;
+}
+
+
+.header .nav__header {
+    padding-bottom: 3.5rem;
+}
+
+
+
+.main {
+    display: grid;
+    text-align: center;
+}
+
+.main__text {
+    margin-bottom: 3.5rem;
+}
+
+.main__bg {
+    margin-bottom: 40px;
+}
+
+.main__txt--sans {
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+
+.main__btn--white {
+    background-color: #fff;
+    font-size: 13px;
+    padding: 10px 65px;
+    border-radius: 25px;
+    box-shadow: var(--bs);
+}
+
+.footer .footer__socials {
+    text-align: center;
+}
+
+.footer__socials > a + a {
+    margin-left: 15px;
+}
+
+.footer__btn {
+    color: #fff;
+}
+
+@media  (min-width: 1000px) {
+    .container {
+        display: flex;
+        background: url('/images/bg-desktop.svg') no-repeat fixed;
+        background-color: var(--violet);
+        padding: 0 60px;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        flex: 1;
+    }
+
+    .main__bg {
+        margin-bottom: 0;
+    }
+
+    .main {
+        flex: 1;
+        padding-left: 25px;
+    }
+
+    .main__text {
+        text-align: justify;
+    }
+
+    .main__title--poppins {
+        font-size: 35px;
+    }
+
+    .main__txt--sans {
+        font-size: 20px;
+    }
+
+    .main__btn--white {
+        font-size: 20px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer .footer__socials {
+        text-align: end;
+
+    }
+
+}
+
